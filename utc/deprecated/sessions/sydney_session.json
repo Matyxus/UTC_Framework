@@ -1,0 +1,29 @@
+{
+  "pddl_params": {
+    "timeout": 25,
+    "window": 30,
+    "planner": "Mercury",
+    "domain": "utc_allowed"
+  },
+  "scenario_name": "sydney_increasing",
+  "duration": 3600,
+  "seed": 466,
+  "num_scenarios": 1,
+  "probability_file": "Sydney",
+  "network": "Sydney",
+  "num_cpus": 1,
+  "num_processes": 4,
+  "num_threads": 3,
+  "time_limit": null,
+  "metrics": {
+    "similarity_metric": [
+      "average_similarity", "average_dissimilarity",
+      "maximal_similarity", "minimal_similarity",
+      "shortest_length"
+    ]
+  },
+  "k": null,
+  "flows": ["exponential_flow"],
+  "flow_count": 4,
+  "c": 1.3
+}

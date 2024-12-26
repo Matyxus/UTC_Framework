@@ -1,0 +1,23 @@
+{
+  "pddl_params": {
+    "timeout": 25,
+    "window": 30,
+    "planner": "Mercury",
+    "domain": "utc_allowed"
+  },
+  "scenario_name": "new_york_static",
+  "duration": 3600,
+  "seed": 650,
+  "num_scenarios": 2,
+  "probability_file": "New_York_static",
+  "network": "New_York",
+  "num_cpus": 1,
+  "num_processes": 4,
+  "num_threads": 3,
+  "time_limit": null,
+  "k": 3000,
+  "flows": ["exponential_flow", "uniform_flow"],
+  "metrics": {},
+  "flow_count": 3,
+  "c": 1.3
+}

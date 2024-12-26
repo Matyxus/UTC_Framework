@@ -1,0 +1,63 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "data_path": {
+      "type": "string",
+      "minLength": 1
+    },
+    "network": {
+      "type": "string",
+      "minLength": 1
+    },
+    "multiplier": {
+      "type": "number",
+      "minimum": 1.0
+    },
+    "start_time": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "end_time": {
+      "anyOf": [
+        {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 86400
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "iterations": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "merging_radius": {
+      "type": "number",
+      "minimum": 1.0
+    },
+    "plotting": {
+      "type": "object",
+      "properties": {
+        "frequency": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "heatmap": {
+          "type": "boolean"
+        },
+        "planets": {
+          "type": "boolean"
+        },
+        "cluster_size": {
+          "type": "integer",
+          "minimum": 1
+        }
+      },
+      "required": ["frequency", "heatmap", "planets", "cluster_size"]
+    }
+  },
+  "required": ["data_path", "network", "multiplier", "start_time", "end_time", "iterations", "merging_radius", "plotting"]
+}

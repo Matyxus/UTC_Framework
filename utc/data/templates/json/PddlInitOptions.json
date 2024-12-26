@@ -1,0 +1,34 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+     "scenario": {
+        "type": "string",
+        "minLength": 1
+     },
+    "new_scenario": {
+        "type": "string",
+        "minLength": 1
+     },
+    "network": {
+        "type": "string",
+        "minLength": 1
+     },
+    "mode": {
+      "type": "string",
+      "enum": ["online", "offline"]
+    },
+    "snapshot": {
+      "anyOf": [
+        {
+          "type": "string",
+          "minLength": 0
+        },
+        {
+          "type": "null"
+        }
+      ]
+    }
+  },
+  "required": ["scenario", "new_scenario", "network", "mode", "snapshot"]
+}

@@ -1,0 +1,30 @@
+{
+  "info": {
+    "name": "clustering_config",
+    "config_type": "grav_clustering",
+    "version": "0.0.1"
+  },
+
+  "logs" : {
+    "level": "DEBUG",
+    "file": "default",
+    "colored": true,
+    "stream": "stdout"
+  },
+
+  "data_path": "../../../data/scenarios/Base/edgedata.out.xml",
+  "network": "DCC",
+  "multiplier": 10.0,
+  "start_time": 25200,
+  "end_time": 32400,
+  "iterations": 160,
+  "merging_radius": 15.0,
+
+  "plotting": {
+    "frequency": 0,
+    "heatmap": false,
+    "planets": true,
+    "cluster_size": 200
+  }
+
+}

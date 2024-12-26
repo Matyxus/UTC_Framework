@@ -1,0 +1,41 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+     "eps": {
+        "type": "number",
+        "minimum": 0.01,
+        "maximum": 0.99
+     },
+    "min_samples": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "min_routes": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "metric": {
+      "type": "string",
+      "enum": [
+        "shortest_length",
+        "average_similarity", "average_dissimilarity",
+        "minimal_similarity", "maximal_similarity"
+      ]
+    },
+    "k": {
+      "anyOf": [
+        {
+          "type": "integer",
+          "minimum": 1
+        },
+        {
+          "type": "number",
+          "minimum": 0.01,
+          "maximum": 0.99
+        }
+      ]
+    }
+  },
+  "required": ["eps", "min_samples", "min_routes", "metric", "k"]
+}

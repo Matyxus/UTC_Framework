@@ -1,0 +1,23 @@
+{
+  "pddl_params": {
+    "timeout": 25,
+    "window": 30,
+    "planner": "Mercury",
+    "domain": "utc_allowed"
+  },
+  "scenario_name": "london_static",
+  "duration": 3600,
+  "seed": 659,
+  "num_scenarios": 4,
+  "probability_file": "London",
+  "network": "London",
+  "num_cpus": 1,
+  "num_processes": 4,
+  "num_threads": 3,
+  "time_limit": null,
+  "metrics": {},
+  "k": null,
+  "flows": ["exponential_flow", "uniform_flow"],
+  "flow_count": 3,
+  "c": 1.4
+}

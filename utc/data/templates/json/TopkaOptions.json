@@ -1,0 +1,15 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+     "c": {
+        "type": "number",
+        "minimum": 1.01
+     },
+    "k": {
+      "type": "integer",
+      "minimum": 2
+    }
+  },
+  "required": ["c", "k"]
+}

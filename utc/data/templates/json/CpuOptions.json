@@ -1,0 +1,15 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+     "threads": {
+        "type": "integer",
+        "minimum": 1
+     },
+    "processes": {
+      "type": "integer",
+      "minimum": 1
+    }
+  },
+  "required": ["threads", "processes"]
+}

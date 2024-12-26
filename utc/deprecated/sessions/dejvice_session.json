@@ -1,0 +1,23 @@
+{
+  "pddl_params": {
+    "timeout": 25,
+    "window": 30,
+    "planner": "Mercury",
+    "domain": "utc_allowed"
+  },
+  "scenario_name": "dejvice",
+  "duration": 3600,
+  "seed": 800,
+  "num_scenarios": 4,
+  "probability_file": "Dejvice",
+  "network": "Dejvice",
+  "num_cpus": 1,
+  "num_processes": 4,
+  "num_threads": 3,
+  "time_limit": null,
+  "k": 3000,
+  "flows": ["exponential_flow", "uniform_flow"],
+  "metrics": {},
+  "flow_count": 4,
+  "c": 1.4
+}

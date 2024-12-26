@@ -1,0 +1,37 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+     "window": {
+        "type": "integer",
+        "minimum": 1
+     },
+    "timeout": {
+        "type": "number",
+        "minimum": 1
+     },
+    "sub_graph": {
+        "type": "string",
+        "minLength": 1
+     },
+    "mode": {
+      "type": "string",
+      "enum": ["online", "offline"]
+    },
+    "snapshot": {
+      "anyOf": [
+        {
+          "type": "string",
+          "minLength": 0
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "keep_problems": { "type": "boolean"},
+    "keep_results": {"type": "boolean"},
+    "keep_planner_output": {"type": "boolean"}
+  },
+  "required": ["window", "timeout", "planner", "domain", "keep_problems", "keep_results", "keep_planner_output"]
+}

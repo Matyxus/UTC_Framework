@@ -1,0 +1,52 @@
+{
+  "info": {
+    "name": "pddl_config",
+    "config_type": "pddl",
+    "version": "0.0.1"
+  },
+
+  "logs" : {
+    "level": "DEBUG",
+    "file": "default",
+    "colored": true,
+    "stream": "stdout"
+  },
+
+  "cpu": {
+    "threads": 8,
+    "processes": 4
+  },
+
+  "init": {
+      "scenario": "lust_25200_32400_lime",
+      "new_scenario": "lust_25200_32400_lime_planned",
+      "network": "lust_lime",
+      "mode": "offline",
+      "snapshot": null
+  },
+
+  "planning": {
+      "window": 30,
+      "timeout": 60,
+      "planner": "Mercury",
+      "domain": "utc_allowed",
+      "keep_problems": true,
+      "keep_results": true,
+      "keep_planner_output": false
+    },
+
+  "network": {
+    "simplify": true,
+    "topka": {
+      "c": 1.2,
+      "k": 3000
+    },
+    "dbscan": {
+      "eps": 0.26,
+      "min_samples": 2,
+      "min_routes": 10,
+      "metric": "shortest_length",
+      "k": 1
+    }
+  }
+}

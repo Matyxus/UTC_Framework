@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<flows>
+	<flow id="r1" fromJunction="2374842054" toJunction="26912394" edges="" numVehicles="133" />
+	<flow id="r21" fromJunction="gneJ45" toJunction="26165156" edges="" numVehicles="75" />
+	<flow id="r58" fromJunction="4352655815" toJunction="26912394" edges="" numVehicles="51" />
+	<flow id="r18" fromJunction="cluster_3133124965_3133124968_4298585027_4298585028_4298585029_442394468" toJunction="26912394" edges="" numVehicles="44" />
+</flows>

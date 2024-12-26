@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/sumoConfiguration.xsd">
+<!-- Input files, network and routes, uses relative path (since folders do not change) -->
+    <input>
+        <net-file value=""/>
+        <route-files value=""/>
+    </input>
+<!-- Starting and ending time of simulation (will end automatically after last vehicle departs)-->
+    <time>
+        <begin value="0"/>
+    </time>
+    <processing>
+		<time-to-teleport value="-1" />
+	</processing>
+</configuration>
