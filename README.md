@@ -7,7 +7,7 @@
   <h3 align="center">Urban Traffic Control</h3>
 
   <p align="center">
-    Extension of bachelor thesis project: connecting automated planning with SUMO simulator
+    Vehicle routing applied on problematic regions.
   </p>
 </div>
 
@@ -20,6 +20,7 @@
     <li>
       <a href="#about-the-project">About The Project</a>
       <ul>
+         <li><a href="#results">Results</a></li>
         <li><a href="#built-with">Built With</a></li>
       </ul>
     </li>
@@ -49,11 +50,26 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-This project is extension of previous version (bachelor thesis): https://github.com/Matyxus/UTC, 
-project can be described with the following flow diagram and <a href="#example">example</a> of how to use the project
-is provided.
+This project builds upon previous works by introducing "problematic" region identification on which vehicle
+routing is applied. These regions are considerably smaller and with the combination of previously developed
+network simplification techniques (edge simplification, TopKA*, DBSCAN route clustering) allows us to effectively
+work with larger scenarios, such as [Dublin](https://github.com/maxime-gueriau/ITSC2020_CAV_impact) 
+and [Luxembourg](https://github.com/lcodeca/LuSTScenario).
 
-![Flow Diagram](Images/FlowDiagram.png)
+![Flow Diagram](Images/FrameworkUTC.png)
+
+<!-- Results -->
+## Results
+This sections describes how results were generated and how to reproduce them, **note** that the simulator SUMO might
+give slightly different results depending on your computer and SUMO version. 
+
+Folder containing results can be located in the folder root: [results_timeout](./results_timeout), where
+scenarios for both Dublin and Luxembourg are generated in each folder, which denotes the timeout of the planner.
+All these folders have results in terms of spreadsheet, that compares them to the base version (not routed) and
+zip file that has the new routed [scenarios](#scenario), those can be put inside the [scenarios](./utc/data/scenarios)
+folder and directly launched with SUMO. They also contain configuration file (JSON) that can be used
+to reproduce the results, for more information refer to [routing](./utc/src/routing) where planning
+of scenarios is explained more in detail.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
