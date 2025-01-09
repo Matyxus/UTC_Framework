@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='utf-8'?>
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/sumoConfiguration.xsd">
+	<input>
+		<net-file value="../../../maps/sumo/DCC.net.xml" />
+		<additional-files value="   ../../itsc_25200_32400_orange/additional/itsc_25200_32400_orange.rou.xml,   ../../itsc_25200_32400_orange/additional/itsc_25200_32400_orange_vehicles.add.xml,   ../../Base/DCC_trafficlights.add.xml" />
+	</input>
+	<time>
+		<begin value="25200" />
+		<step-length value="0.5" />
+	</time>
+</configuration>

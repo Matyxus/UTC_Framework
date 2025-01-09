@@ -16,9 +16,6 @@ pyvenv.cfg
 # Logs
 /utc/data/logs
 
-# Scenarios
-/utc/data/scenarios/
-
 # File pointer
 *.Identifier
 

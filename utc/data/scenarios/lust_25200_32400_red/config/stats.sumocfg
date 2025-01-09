@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='utf-8'?>
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/sumoConfiguration.xsd">
+	<input>
+		<net-file value="../../../maps/sumo/lust.net.xml" />
+		<additional-files value="../../lust_25200_32400_red/additional/lust_25200_32400_red.rou.xml,../../lust_25200_32400_red/additional/lust_25200_32400_red_vehicles.add.xml,../../Lust/additional/tll.static.xml,../../lust_25200_32400_red/config/edge_data.add.xml" />
+	</input>
+	<time>
+		<begin value="25200" />
+		<step-length value="0.5" />
+		<end value="32400" />
+	</time>
+</configuration>

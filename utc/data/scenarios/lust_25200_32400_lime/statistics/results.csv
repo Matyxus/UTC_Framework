@@ -1,0 +1,5 @@
+name,loaded,inserted,running,waiting,total,jam,yield lane,wrong lane,collisions,stops,braking,vehicles,routeLength,speed,duration,waiting time,timeLoss,departDelay,total travel time,total depart delay
+stats,9227,9225,889,0,0,0,0,0,0,0,48,8336,7917.06,10.91,726.40,117.43,195.84,0.05,6055307.50,397.00
+stats_full,9227,9227,0,0,0,0,0,0,0,0,49,9227,7989.02,10.92,733.57,118.85,197.64,0.05,6768637.00,446.00
+stats_full_routed,9227,9227,0,0,2,0,1,0,1,0,82,9227,7598.26,10.19,769.90,192.52,279.94,0.09,7103832.50,790.50
+stats_routed,9227,9225,922,0,1,0,1,0,0,0,76,8303,7559.72,10.35,758.90,187.51,273.33,0.07,6301120.50,610.00

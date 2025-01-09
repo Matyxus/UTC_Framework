@@ -67,7 +67,7 @@ Folder containing results can be located in the folder root: [results_timeout](.
 scenarios for both Dublin and Luxembourg are generated in each folder, which denotes the timeout of the planner.
 All these folders have results in terms of spreadsheet, that compares them to the base version (not routed) and
 zip file that has the new routed [scenarios](#scenario), those can be put inside the [scenarios](./utc/data/scenarios)
-folder and directly launched with SUMO. They also contain configuration file (JSON) that can be used
+folder (where the "base" non-routed scenarios are located) and directly launched with SUMO. They also contain configuration file (JSON) that can be used
 to reproduce the results, for more information refer to [routing](./utc/src/routing) where planning
 of scenarios is explained more in detail.
 
