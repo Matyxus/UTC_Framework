@@ -113,13 +113,13 @@ used in this project: [Mercury](https://helios.hud.ac.uk/scommv/IPC-14/errPlan.h
 
 1. Clone the repo
    ```sh
-   git clone https://github.com/Matyxus/UTC-v2
+   git clone https://github.com/Matyxus/UTC_Framework
    ```
-2. In folder where UTC-v2 is located execute:
+2. In folder where UTC_Framework is located execute:
    ```sh
-   pip install -e UTC-v2
+   pip install -e UTC_Framework
    ```
-3. Install requirements (in ../UTC-v2)
+3. Install requirements (in ./UTC_Framework)
    ```sh
    pip install -r requirements.txt
    ```
@@ -127,7 +127,7 @@ used in this project: [Mercury](https://helios.hud.ac.uk/scommv/IPC-14/errPlan.h
 standard as input -> domain, problem file, result file)
 5. Give permission to project enabling it to create, delete: folders, files and execute
 commands with [subprocess](https://docs.python.org/3/library/subprocess.html) library.
-6. Execute UTC-v2/utc/test/test_launcher.py for testing the whole project (checks for missing folders etc.)
+6. Execute UTC_Framework/utc/test/test_launcher.py for testing the whole project (checks for missing folders etc.)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
